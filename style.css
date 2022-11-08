@@ -1,0 +1,340 @@
+@font-face{
+font-family: 'TTLakes';
+src: url(fonts/TTLakes-Regular.woff2)
+url(fonts/TTLakes-Regular.woff)
+url(fonts/TTLakes-Medium.woff2)
+url(fonts/TTLakes-Medium.woff)
+url(fonts/TTLakes-Bold.woff2)
+url(fonts/TTLakes-Bold.woff);
+font-weight: normal;
+font-style: normal;
+}
+
+
+
+body{
+width: 100%;
+max-width: 1120px;
+margin: 0 auto;
+font-family: 'TTLakes', sans-serif;
+}
+/*header
+======================*/
+
+.header{
+padding: 0;
+height: 88px;
+display: flex;
+justify-content: space-between;
+margin: 0 16px;
+}
+
+.logo{
+display:flex;
+justify-content: flex-start;
+}
+
+.logo__image{
+width:97px;
+height: 51px;
+align-self: center;
+margin-left: 16px;
+margin-right:16px;
+}
+
+.logo::after{
+border-right: 2px solid #EAEAEA;
+content: "";
+align-self: center;
+height: 32px;
+}
+
+.options{
+display: flex;
+justify-content: flex-end;
+}
+
+}
+.forms{
+display:flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.button{
+width: 40px;
+height: 40px;
+background-color: #FF3E79;
+border: none;
+border-radius:50%;
+margin:24px 8px;
+}
+
+.button:hover{
+opacity: .8;
+transition:.3s ;
+}
+
+.check__button{
+margin-right:0;
+}
+
+.call__button{
+display: none;
+}
+
+.massege__button{
+display: none;
+}
+
+.profile__button{
+display: none;
+}
+
+.burger__button{
+margin: 24px auto 24px 0px;
+}
+
+
+/*media__header===================================*/
+@media(min-width: 768px){
+    .logo::after{
+display: none;
+
+}
+    .call__button{
+display: block;
+}
+
+    .massege__button{
+display: block;
+}
+
+    .profile__button{
+display: block;
+margin-right: 20px;
+
+}
+
+    .options{
+align-items: center;
+}
+    .logo__image{
+margin-left: 20px;
+}
+    .burger__button{
+margin-right: 20px;
+}
+
+    .burger__button::after{
+content: '';
+display: inline-block;
+border-right: 2px solid #EAEAEA;
+content: "";
+align-self: center;
+height: 32px;
+position: absolute;
+margin-left: 30px;
+top: 28px;
+bottom: 28px;
+}
+
+    .profile__button::after{
+content: '';
+display: inline-block;
+border-right: 2px solid #EAEAEA;
+content: "";
+align-self: center;
+height: 32px;
+margin-left: 22px;
+position: absolute;
+top: 28px;
+bottom: 28px;
+}
+}
+@media(min-width: 1120px){
+
+    .header{
+display: none;
+}
+}
+
+/*main
+======================*/
+.main{
+margin: 0;
+}
+
+.main__header{
+display: flex;
+justify-content: space-between;
+}
+
+.title{
+font-size: 28px;
+line-height: 40px;
+}
+
+
+.title::before{
+border-left: 4px solid #41F6D7;
+content:"";
+align-self: center;
+height: 34px;
+border-top-right-radius: 4px;
+border-bottom-right-radius: 4px;
+margin-right: 12px;
+}
+
+.slider{
+display: flex;
+align-content: center;
+}
+
+.slider__list{
+display: flex;
+list-style-type: none;
+overflow-x: auto;
+flex-wrap: nowrap;
+padding: 0;
+}
+
+.slider__link{
+display: flex;
+align-self:center;
+text-decoration: none;
+padding: .5em;
+margin: .5em;
+white-space: nowrap;
+color:#7E7E82;
+border: 2px solid #fff;
+}
+
+.slider__link:hover{
+border: 2px solid #B8FFEC;
+border-radius: 6px;
+color:#7E7E82;
+}
+
+.slider__link:visited{
+color:#7E7E82;
+}
+
+.slider__link:active{
+color:#7E7E82;
+}
+
+
+.label{
+display: none;
+
+}
+.text{
+height: 90px;
+overflow: hidden;
+margin-right: 16px;
+margin-left: 16px;
+font-size: 14px;
+line-height: 18px;
+font-family:'TTLakes', sans-serif;
+}
+
+read-more__button{
+display: block;
+margin-left: 16px;
+white-space: nowrap;
+margin-bottom: 16px;
+}
+
+.read-more__image{
+margin-left: 16px;
+margin-right: 16px;
+
+}
+
+read-more__button:hover{
+border: 2px solid #B8FFEC;
+border-radius: 6px;
+}
+.logo__photo{
+width: 100%;
+margin-top: 16px;
+}
+/*media___main=================================*/
+
+@media(min-width: 768px){
+
+
+
+    .content{
+display: flex;
+justify-content: space-between;
+width: 100%
+}
+    .wrapper{
+display: flex;
+width: 50%;
+}
+    .text{
+height: 160px;
+}
+
+    .logo__photo{
+display: block;
+width: 50%;
+border-radius: 5px;
+margin: 16px;
+
+}
+}
+
+
+
+@media(min-width: 1120px){
+
+    .label{
+display:block;
+}
+    .buttons{
+display:flex;
+margin-right: 32px;
+}
+    .slider__list{
+flex-wrap:wrap;
+margin: 0;
+margin-left: 24px;
+}
+    .logo__photo{
+margin-right: 32px;
+}
+    .main__header{
+align-items: flex-end;
+margin: 0;
+}
+    .button{
+margin: 0;
+margin-left: 8px;
+margin-top: 42px;
+}
+
+    .repair__button{
+margin-right: 32px;
+}
+    .title{
+margin: 0;
+margin-top: 42px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
