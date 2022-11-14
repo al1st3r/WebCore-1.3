@@ -29,7 +29,7 @@ justify-content: space-between;
 margin: 0 16px;
 }
 
-.logo{
+.header__logo{
 display:flex;
 justify-content: flex-start;
 }
@@ -42,26 +42,20 @@ margin-left: 16px;
 margin-right:16px;
 }
 
-.logo::after{
+.header__logo::after{
 border-right: 2px solid #EAEAEA;
 content: "";
 align-self: center;
 height: 32px;
 }
 
-.options{
+.header__options{
 display: flex;
 justify-content: flex-end;
 }
 
-}
-.forms{
-display:flex;
-align-items: center;
-justify-content: space-between;
-}
 
-.button{
+.header__button{
 width: 40px;
 height: 40px;
 background-color: #FF3E79;
@@ -70,7 +64,7 @@ border-radius:50%;
 margin:24px 8px;
 }
 
-.button:hover{
+.header__button:hover{
 opacity: .8;
 transition:.3s ;
 }
@@ -98,7 +92,7 @@ margin: 24px auto 24px 0px;
 
 /*media__header===================================*/
 @media(min-width: 768px){
-    .logo::after{
+    .header__logo::after{
 display: none;
 
 }
@@ -116,7 +110,7 @@ margin-right: 20px;
 
 }
 
-    .options{
+    .header__options{
 align-items: center;
 }
     .logo__image{
@@ -170,13 +164,13 @@ display: flex;
 justify-content: space-between;
 }
 
-.title{
+.main__title{
 font-size: 28px;
 line-height: 40px;
 }
 
 
-.title::before{
+.main__title::before{
 border-left: 4px solid #41F6D7;
 content:"";
 align-self: center;
@@ -256,7 +250,7 @@ read-more__button:hover{
 border: 2px solid #B8FFEC;
 border-radius: 6px;
 }
-.logo__photo{
+.main__photo{
 width: 100%;
 margin-top: 16px;
 }
@@ -279,7 +273,7 @@ width: 50%;
 height: 160px;
 }
 
-    .logo__photo{
+    .content__photo{
 display: block;
 width: 50%;
 border-radius: 5px;
@@ -295,7 +289,7 @@ margin: 16px;
     .label{
 display:block;
 }
-    .buttons{
+    .main__buttons{
 display:flex;
 margin-right: 32px;
 }
@@ -304,14 +298,14 @@ flex-wrap:wrap;
 margin: 0;
 margin-left: 24px;
 }
-    .logo__photo{
+    .content__photo{
 margin-right: 32px;
 }
     .main__header{
 align-items: flex-end;
 margin: 0;
 }
-    .button{
+    .header__button{
 margin: 0;
 margin-left: 8px;
 margin-top: 42px;
@@ -320,7 +314,7 @@ margin-top: 42px;
     .repair__button{
 margin-right: 32px;
 }
-    .title{
+    .main__title{
 margin: 0;
 margin-top: 42px;
 }
