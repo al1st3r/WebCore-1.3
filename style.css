@@ -1,15 +1,16 @@
 @font-face{
-font-family: 'TTLakes';
-src: url(fonts/TTLakes-Regular.woff2)
-url(fonts/TTLakes-Regular.woff)
-url(fonts/TTLakes-Medium.woff2)
-url(fonts/TTLakes-Medium.woff)
-url(fonts/TTLakes-Bold.woff2)
-url(fonts/TTLakes-Bold.woff);
-font-weight: normal;
-font-style: normal;
+    font-family: 'TTLakes';
+    src: url(fonts/TTLakes-Regular.woff2),
+    url(fonts/TTLakes-Regular.woff),
+    url(fonts/TTLakes-Medium.woff2),
+    url(fonts/TTLakes-Medium.woff),
+    url(fonts/TTLakes-Bold.woff2),
+    url(fonts/TTLakes-Bold.woff);
+    font-weight: normal;
+    font-style: normal;
 }
 
+/*Сылки для шрифтов нужно разделять запятыми, в твоей реализации они не подтянулись, теперь шрифты работают*/
 
 
 body{
